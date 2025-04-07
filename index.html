@@ -298,10 +298,6 @@
     <div class="tab-content" id="credentials">
         <h2>Credentials</h2>
         <div id="credentials-protected">
-            <p>This section is password protected. Please enter the password to view the credentials.</p>
-            <input type="password" id="password-input" placeholder="Enter password" />
-            <button id="password-submit">Submit</button>
-            <div id="credentials-content" style="display: none;">
                 <ul>
                     <li><a href="https://drive.google.com/file/d/14-3dkk7PRdFufgsuHqp8_5uhZ83r-0nP/view?usp=sharing" target="blank">Cover Letter</a></li>
                     <li><a href="https://drive.google.com/file/d/1fOGmp-5scryeifxkieeCoefigHbs-Z-r/view?usp=sharing" target="blank">Curriculum Vitae</a></li>
@@ -315,24 +311,6 @@
                     <li><a href="https://drive.google.com/file/d/1b2XbPfUJ6nEgAtF65q2e2PlwXVa3M94v/view?usp=sharing" target="blank">Introductory Video</a></li>
                 </ul>
             </div>
-            <script>
-                const passwordSubmit = document.getElementById('password-submit');
-                const passwordInput = document.getElementById('password-input');
-                const credentialsContent = document.getElementById('credentials-content');
-
-                passwordSubmit.addEventListener('click', () => {
-                    const password = passwordInput.value;
-                    const correctPassword = 'Iambatman'; 
-
-                    if (password === correctPassword) {
-                        credentialsContent.style.display = 'block';
-                        passwordInput.style.display = 'none';
-                        passwordSubmit.style.display = 'none';
-                    } else {
-                        alert('Incorrect password. Please try again.');
-                    }
-                });
-            </script>
         </div>
     </div>
 
