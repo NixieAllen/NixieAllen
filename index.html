@@ -76,11 +76,57 @@
     .tab-content.active {
       display: block;
     }
+    /* Responsive styles */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .left-column {
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-column img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tab {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .left-column img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .tab-content {
+    padding: 15px;
+  }
+}
   </style>
 </head>
 <body>
   <div class="left-column">
-    <img src="https://raw.githubusercontent.com/NixieAllen/NixieAllen/main/profile.jpg" alt="Profile Picture" style="width: 300px; height: 300px;" />
+    <img src="https://raw.githubusercontent.com/NixieAllen/NixieAllen/main/profile.jpg" alt="Profile Picture"/>
     <h2>Nikka Allen Bernal Santos</h2>
     <div class="contact-info">
       <p><strong>Email:</strong> na.santos0121@gmail.com</p>
