@@ -313,25 +313,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        const passwordSubmit = document.getElementById('password-submit');
-        const passwordInput = document.getElementById('password-input');
-        const credentialsContent = document.getElementById('credentials-content');
-
-        passwordSubmit.addEventListener('click', () => {
-            const password = passwordInput.value;
-            const correctPassword = 'Iambatman'; 
-
-            if (password === correctPassword) {
-                credentialsContent.style.display = 'block';
-                passwordInput.style.display = 'none';
-                passwordSubmit.style.display = 'none';
-            } else {
-                alert('Incorrect password. Please try again.');
-            }
-        });
-    </script>
   </div>
 
   <script>
